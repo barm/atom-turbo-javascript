@@ -465,53 +465,53 @@ import ${1:*} as ${2:name} from '${3:module}';
 
 #### `desc⇥` describe
 ```js
-describe('${1:description}', function () {
+describe('${1:description}', () => {
   ${0}
 });
 ```
 #### `cont⇥` context
 ```js
-context('${1:description}', function () {
+context('${1:description}', () => {
   ${0}
 });
 ```
 #### `it⇥` and `its⇥` synchronous "it"
 ```js
-it('${1:description}', function () {
+it('${1:description}', () => {
   ${0}
 });
 ```
 #### `ita⇥` asynchronous "it"
 ```js
-it('${1:description}', function (done) {
+it('${1:description}', (done) => {
   ${0}
 });
 ```
 
 #### `bf⇥` before test suite
 ```js
-before(function () {
+before(() => {
   ${0}
 });
 ```
 
 #### `bfe⇥` before each test
 ```js
-beforeEach(function () {
+beforeEach(() => {
   ${0}
 });
 ```
 
 #### `aft⇥` after test suite
 ```js
-after(function () {
+after(() => {
   ${0}
 });
 ```
 
 #### `afe⇥` after each test
 ```js
-afterEach(function () {
+afterEach(() => {
   ${0}
 });
 ```
