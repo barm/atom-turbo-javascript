@@ -2,35 +2,35 @@
   "describe":
     prefix: "desc"
     body: """
-    describe('${1:description}', function () {
+    describe('${1:description}', () => {
     \t${0}
     });
     """
   "context":
     prefix: "cont"
     body: """
-    context('${1:description}', function () {
+    context('${1:description}', () => {
     \t${0}
     });
     """
   "it":
     prefix: "it"
     body: """
-    it('${1:description}', function () {
+    it('${1:description}', () => {
     \t${0}
     });
     """
   "it synchronous":
     prefix: "its"
     body: """
-    it('${1:description}', function () {
+    it('${1:description}', () => {
     \t${0}
     });
     """
   "it asynchronous":
     prefix: "ita"
     body: """
-    it('${1:description}', function (done) {
+    it('${1:description}', (done) => {
     \t${0}
     \tdone();
     });
@@ -38,28 +38,28 @@
   "mocha before":
     prefix: "bf"
     body: """
-    before(function () {
+    before(() => {
     \t${0}
     });
     """
   "mocha beforeEach":
     prefix: "bfe"
     body: """
-    beforeEach(function () {
+    beforeEach(() => {
     \t${0}
     });
     """
   "mocha after":
     prefix: "aft"
     body: """
-    after(function () {
+    after(() => {
     \t${0}
     });
     """
   "mocha afterEach":
     prefix: "afe"
     body: """
-    afterEach(function () {
+    afterEach(() => {
     \t${0}
     });
     """
